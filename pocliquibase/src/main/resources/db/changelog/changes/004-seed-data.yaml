@@ -1,0 +1,44 @@
+databaseChangeLog:
+  - changeSet:
+      id: 4-seed-data
+      author: poc
+      changes:
+        - insert:
+            tableName: department
+            columns:
+              - column:
+                  name: name
+                  value: Engineering
+        - insert:
+            tableName: department
+            columns:
+              - column:
+                  name: name
+                  value: People
+        - insert:
+            tableName: employee
+            columns:
+              - column:
+                  name: name
+                  value: Ada Lovelace
+              - column:
+                  name: department_id
+                  valueNumeric: 1
+        - insert:
+            tableName: employee
+            columns:
+              - column:
+                  name: name
+                  value: Grace Hopper
+              - column:
+                  name: department_id
+                  valueNumeric: 1
+        - insert:
+            tableName: employee
+            columns:
+              - column:
+                  name: name
+                  value: Alan Turing
+              - column:
+                  name: department_id
+                  valueNumeric: 2

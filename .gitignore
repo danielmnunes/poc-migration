@@ -1,0 +1,14 @@
+.cursor/
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+**/build/
+**/.gradle/
+**/out/
+**/bin/
+
+.DS_Store
+Thumbs.db
